@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Network Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+        <!-- Header -->
+        <h1> Display MetaMask Account and Balance </h1>
+
+        <!-- Connect Button -->
+        <button onclick="connectMetaMask()">
+            Connect MetaMask
+        </button>
+
+        <!-- Display the connected account -->
+        <p><strong>Account:</strong> <span id="account"></span></p>
+
+        <!-- Get the account Balance -->
+        <button onclick="getBalance()">
+            Get Balance 
+        </button>
+
+        <!-- Display the account balance -->
+        <p><strong>Balance:</strong> <span id="balance"></span></p>
+        <p><strong>Currency:</strong> <span id="currency"></span></p>
+
+    </div>
+
+    <!-- Load Web3.js library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <!-- Load our custom JavaScript -->
+    <script src="application.js">
+    </script>
+</body>
+</html>

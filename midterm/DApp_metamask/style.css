@@ -1,0 +1,70 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Page */
+body {
+    min-height: 100vh;
+    background: #f9fafb;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 520px;
+    padding: 40px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+}
+
+/* Buttons (targets ALL buttons since no class is used) */
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    background: #f6851b;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #e2761b;
+}
+
+/* Info text */
+p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    word-break: break-all;
+}
+
+/* Labels */
+strong {
+    font-weight: 600;
+}
+
+/* Account & balance output */
+#account,
+#balance {
+    color: #2563eb;
+}

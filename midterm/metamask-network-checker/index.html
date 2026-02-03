@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Network Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+        <!-- Header -->
+        <h1>🦊<br> MetaMask Network Checker</h1>
+        <p class="subtitle">Check which Ethereum network you're connected to</p>
+
+        <!-- Connect Button -->
+        <button class="connect-button" id="connectBtn" onclick="connectMetaMask()">
+            Connect MetaMask
+        </button>
+
+        <!-- Network Information (hidden initially) -->
+        <div class="network-info" id="networkInfo">
+            <div class="network-emoji" id="networkEmoji">🌐</div>
+            <div class="network-name" id="networkName">Network Name</div>
+            <div class="chain-id">Chain ID: <strong id="chainId">0</strong></div>
+            <div class="network-status">✓ Connected</div>
+        </div>
+
+        <!-- Error Message (hidden initially) -->
+        <div class="error-message" id="errorMessage">
+            Error message will appear here
+        </div>
+    </div>
+
+    <!-- Load Web3.js library from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+    <!-- Load our custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
